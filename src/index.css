@@ -1,13 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family:'Poppins','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p{
+  font-size: 1.5rem;
 }
+
+h1{
+  font-size: 6rem;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  color: #fff;
+}
+
+.app::before{
+  content: "";
+  background: url("./assets/sunset.jpg") no-repeat center center/cover ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.app .search{
+  text-align: center;
+  padding: 10px;
+}
+.app input{
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(0,0,0,0.1);
+}
+::placeholder{
+  color: #ffffff87;
+}
+
+.container{
+  width: 700px;
+  height: 500px;
+  margin: auto;
+  /* top: 10%; */
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  position: relative;
+}
+
+.app .container .top{
+  width: 100%;
+  margin: 1rem auto;
+  }
+
+  .app .desc{
+    position: relative;
+    right: -90%;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+  }
+
+  .app .bottom{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    text-align: center;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.3);
+  }
+  .bold{
+    font-weight: 700;
+  }
